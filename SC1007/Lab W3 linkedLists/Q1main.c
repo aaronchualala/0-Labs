@@ -110,5 +110,22 @@ void deleteList(ListNode **ptrHead)
 
 int removeNode(ListNode **ptrHead, int index)
 {
-    return 0;
+    ListNode *pre;
+    // if index is first (and check that there are still >0 nodes left)
+    if (index == 0 && *ptrHead != NULL)
+    {
+        *ptrHead = (**ptrHead).next;
+        return 1;
+    }
+    // if index in range
+    else if (findNode(*ptrHead, index) != NULL)
+    {
+        pre = findNode(*ptrHead, index - 1);
+        pre->next = (pre->next)->next;
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
 }

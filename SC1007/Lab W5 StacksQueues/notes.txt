@@ -1,0 +1,6 @@
+- how to remember all the googled stackoverflow tips during actual lab?
+(e.g. 
+names of standard libraries to include at top,
+certain functions like isdigit()
+obscure tricks like int x = c - '0' (converts char digit c to a int type) 
+)

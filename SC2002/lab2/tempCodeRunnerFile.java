@@ -1,0 +1,1 @@
+Integer.valueOf(numStr.charAt(j))
